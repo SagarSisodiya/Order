@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://sagarsisodiya8:Mclaren%40720s@cluster0.i2obfip.mongodb.net/
+      database: Sagar
+
+  cloud:
+    stream:
+      bindings:
+        checkOutOrder-in-0:
+          destination: cart
+          group: order
+            
+      
+server:
+  port: 8082
